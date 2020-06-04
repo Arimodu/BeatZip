@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.IO.Compression;
-using System.Security.Cryptography;
+using System.Threading;
 
 namespace BeatZip
 {
@@ -22,11 +22,13 @@ namespace BeatZip
 
             for (int i = 0; i < subdirs.Length; i++)
             {
-                Console.WriteLine(subdirs[i]);
                 string currentFileName = Path.GetFileName(subdirs[i]) + ".zip";
+                Console.WriteLine(currentFileName);
                 if (File.Exists(destFolder + @"\" + currentFileName))
                 {
                     Console.WriteLine("Already exists! Skipping!");
+                    Thread.Sleep(5);
+                    Console.WriteLine();
                     continue;
                 }
                 else
@@ -34,10 +36,16 @@ namespace BeatZip
                     Console.WriteLine("Zipping!");
                     ZipFile.CreateFromDirectory(subdirs[i], destFolder + @"\" + currentFileName);
                     Console.WriteLine("Zipped succesfully!");
+                    Console.WriteLine();
                 }
             }
+            Thread.Sleep(500);
+            Console.WriteLine();
+            Thread.Sleep(500);
+            Console.WriteLine();
+            Thread.Sleep(500);
             Console.WriteLine("All files zipped succesfully");
-            Console.ReadKey();
+            Thread.Sleep(10000);
         }
     }
 }
