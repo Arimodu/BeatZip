@@ -8,7 +8,7 @@ A HUGE thank you to Zingabopp and agc93 from the Beat Saber modding community di
 	No file icon
 	
 
-If you experience issues you may ping me on the Beat Saber modding community discord or PM me directly from there. My username is "Arimodu"
+If you experience issues you may submit a bug report to the repo itself under the issues tab or ping me on the Beat Saber modding community discord or PM me directly from there. My username is "Arimodu"
 
 
 I am releasing this as an open source project. If you want you may build on this, bugfix this, polish the code and whatever other stuff you may want to do. Make a branch and submit a pull request to pull to master and release.
