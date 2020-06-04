@@ -6,6 +6,7 @@ A HUGE thank you to Zingabopp and agc93 from the Beat Saber modding community di
 **Known Issues**
 		
 	The application will crash when there is already a .zip file with the same name in the destination directory
+	
 	No file icon
 	
 
