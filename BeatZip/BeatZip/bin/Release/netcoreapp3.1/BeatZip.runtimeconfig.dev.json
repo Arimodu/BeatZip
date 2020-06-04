@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Arimodu\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Arimodu\\.nuget\\packages"
+    ]
+  }
+}

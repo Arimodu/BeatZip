@@ -1,0 +1,13 @@
+D:\Repos\BeatZip\BeatZip\bin\Release\netcoreapp3.1\BeatZip.exe
+D:\Repos\BeatZip\BeatZip\bin\Release\netcoreapp3.1\BeatZip.deps.json
+D:\Repos\BeatZip\BeatZip\bin\Release\netcoreapp3.1\BeatZip.runtimeconfig.json
+D:\Repos\BeatZip\BeatZip\bin\Release\netcoreapp3.1\BeatZip.runtimeconfig.dev.json
+D:\Repos\BeatZip\BeatZip\bin\Release\netcoreapp3.1\BeatZip.dll
+D:\Repos\BeatZip\BeatZip\bin\Release\netcoreapp3.1\BeatZip.pdb
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.csproj.CoreCompileInputs.cache
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.AssemblyInfoInputs.cache
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.AssemblyInfo.cs
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.dll
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.pdb
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.genruntimeconfig.cache
+D:\Repos\BeatZip\BeatZip\obj\Release\netcoreapp3.1\BeatZip.csprojAssemblyReference.cache
