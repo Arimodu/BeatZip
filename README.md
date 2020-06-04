@@ -3,6 +3,8 @@ A small application that allows PCVR users to zip all their songs in the song di
 
 A HUGE thank you to Zingabopp and agc93 from the Beat Saber modding community discord for helping me accompish this by giving me advice on the matter. I am really grateful for your help.
 
+Usage tutorial: https://youtu.be/f3R1x4-T1Qc
+
 **Known Issues**
 		
 	No file icon
