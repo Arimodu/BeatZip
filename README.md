@@ -8,7 +8,7 @@ A HUGE thank you to Zingabopp and agc93 from the Beat Saber modding community di
 	The application will crash when there is already a .zip file with the same name in the destination directory
 	
 
-If you experience issues you may ping me on the Beat Saber modding community discord or PM me directly from there.
+If you experience issues you may ping me on the Beat Saber modding community discord or PM me directly from there. My username if "Arimodu"
 
 
 I am releasing this as an open source project. If you want you may build on this, bugfix this, polish the code and whatever other stuff you may want to do. Make a branch and submit a pull request to pull to master and release.
