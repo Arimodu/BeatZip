@@ -1,7 +1,7 @@
 # BeatZip
 A small application that allows PCVR users to zip all their songs in the song directory for uploading to the Oculus Quest version of Beat Saber
 
-A HUGE thank you to Zingabopp and agc93 from the Beat Saber modding community discord for helping me accompish this by giving me advice on the matter. I am really grateful for your help.
+A HUGE thank you to Zingabopp and agc93 from the Beat Saber modding community discord for helping me accomplish this by giving me advice on the matter. I am really grateful for your help.
 
 Usage tutorial: https://youtu.be/f3R1x4-T1Qc
 
