@@ -14,18 +14,48 @@ namespace BeatZip
             string PCVRInstallDir;
             string destFolder;
             bool historyEnabled = true;
+            bool beatSageMode = false;
             string historyFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"BeatZip\History.txt");
             string beatZipData = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"BeatZip");
             string pathHistoryFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), @"BeatZip\PathHistory.txt");
+            string PCVRSongDir;
 
 
             if (args.Length != 0)
             {
-                if (args[0].ToLower() == "disablehistory")
+                for (int i = 0; i < args.Length; i++)
                 {
-                    historyEnabled = false;
-                    Console.WriteLine("History disabled!");
-                    Thread.Sleep(1000);
+                    switch (args[i].ToLower())
+                    {
+                        case "-disablehistory":
+                            historyEnabled = false;
+                            Console.WriteLine("History disabled!");
+                            Thread.Sleep(1000);
+                            break;
+
+                        case "disablehistory":
+                            historyEnabled = false;
+                            Console.WriteLine("History disabled!");
+                            Thread.Sleep(1000);
+                            break;
+
+                        case "-BeatSageMode":
+                            beatSageMode = true;
+                            Console.WriteLine("Beat Sage Mode enabled!");
+                            Thread.Sleep(1000);
+                            break;
+
+                        case "BeatSageMode":
+                            beatSageMode = true;
+                            Console.WriteLine("Beat Sage Mode enabled!");
+                            Thread.Sleep(1000);
+                            break;
+
+                        default:
+                            Console.WriteLine(args[i] + " is an unknown argument. Ignoring...");
+                            Thread.Sleep(1000);
+                            break;
+                    }
                 }
             }
 
@@ -45,7 +75,7 @@ namespace BeatZip
                 {
                     Console.WriteLine("History file detected and enabled!");
                     Console.WriteLine("To disable history start the application with the -disablehistory argument");
-                    Thread.Sleep(5000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                 }
                 if (!File.Exists(pathHistoryFile))
@@ -100,7 +130,15 @@ namespace BeatZip
                 Directory.CreateDirectory(destFolderOld);
             }
 
-            string PCVRSongDir = PCVRInstallDir + @"\Beat Saber_Data\CustomLevels";
+            if (!beatSageMode)
+            {
+                PCVRSongDir = PCVRInstallDir + @"\Beat Saber_Data\CustomLevels";
+            }
+            else
+            {
+                PCVRSongDir = PCVRInstallDir;
+            }
+            
             string[] subdirs = Directory.GetDirectories(PCVRSongDir);
 
 
@@ -112,7 +150,7 @@ namespace BeatZip
 
                 if (File.Exists(currentFilePath))
                 {
-                    Console.WriteLine("Already exists! Moving to old!");
+                    Console.WriteLine("Already exists! Moving to old {0} out of {1}", i + 1, subdirs.Length);
                     File.Move(currentFilePath, destFolderOld + @"\" + currentFileName, true);
                     Console.WriteLine();
                     Thread.Sleep(5);
@@ -120,7 +158,7 @@ namespace BeatZip
                 }
                 else if (File.Exists(destFolderOld + @"\" + currentFileName))
                 {
-                    Console.WriteLine("Already exists in old! Skipping!");
+                    Console.WriteLine("Already exists in old! Skipping {0} out of {1}", i + 1, subdirs.Length);
                     Console.WriteLine();
                     Thread.Sleep(5);
                     continue;
@@ -132,7 +170,7 @@ namespace BeatZip
                     {
                         if (song == currentFileName)
                         {
-                            Console.WriteLine("Found in history! Skipping!");
+                            Console.WriteLine("Found in history! Skipping {0} out of {1}", i + 1, subdirs.Length);
                             Console.WriteLine();
                             foundInHistory = true;
                             break;
@@ -143,7 +181,7 @@ namespace BeatZip
                         continue;
                     }
                 }
-                Console.WriteLine("Zipping!");
+                Console.WriteLine("Zipping {0} out of {1}", i + 1, subdirs.Length);
                 ZipFile.CreateFromDirectory(subdirs[i], destFolder + @"\" + currentFileName);
                 Console.WriteLine("Zipped succesfully!");
                 if (historyEnabled == true)
