@@ -10,7 +10,7 @@ Usage tutorial: https://youtu.be/f3R1x4-T1Qc
 	No file icon
 	
 
-If you experience issues you may submit a bug report to the repo itself under the issues tab or ping me on the Beat Saber modding community discord. My username is "Arimodu"
+If you experience issues you may submit a bug report to the repo itself under the issues tab or ping @Arimodu on the Beat Saber modding community discord.
 
 
 I am releasing this as an open source project. If you want you may build on this, bugfix this, polish the code and whatever other stuff you may want to do. Make a branch and submit a pull request to pull to master and release.
